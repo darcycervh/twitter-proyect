@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+.text-uppercase{
+    text-transform: uppercase;
+}
+nav h1{
+    background: rgb(169,3,41); /* Old browsers */
+    background: -moz-linear-gradient(top, rgba(169,3,41,1) 0%, rgba(143,2,34,1) 44%, rgba(109,0,25,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(169,3,41,1) 0%,rgba(143,2,34,1) 44%,rgba(109,0,25,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(169,3,41,1) 0%,rgba(143,2,34,1) 44%,rgba(109,0,25,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a90329', endColorstr='#6d0019',GradientType=0 );
+    color: #fff;
+    font-size: 40px;
+    padding: 15px 0;
+    text-align: center;
+}
+body{
+    background-image: url(../assets/images/forest.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.box-1{
+    background: #fff;
+    height: auto;
+    width: 600px;
+    padding: 10px;
+    position: relative;
+    top: 10px;
+    left: 70px;
+}
+.box-2{
+    background: #fff;
+    height: auto;
+    width: 600px;
+    padding: 10px;
+    position: absolute;
+    right: 70px;
+    top: 85px;
+}
+.textarea{
+    border: none;
+    width: 580px;
+    resize: none;
+    overflow: none;
+    outline: none;
+}
+.textarea[placeholder]{
+    font-size: 16px;
+}
+hr{
+    border: 0.5px solid silver;
+}
+button{
+    padding: 5px 10px;
+    margin-top: 5px;
+    background: silver;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+.list-message{
+    background: #fff;
+    height: auto;
+    width: 600px;
+    padding: 10px;
+    position: relative;
+    margin-top: 20px;
+    left: 70px;
+}
+.box-count{
+    background: #fff;
+    font-weight: bold;
+    position: absolute;
+    display: inline-block;
+    bottom: 15px;
+    right: 20px;
+}
+.green{
+    color: rgb(15, 75, 15);
+}
+.orangered{
+    color: orangered;
+}
+.red{
+    color: red;
+}
