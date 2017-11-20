@@ -70,6 +70,10 @@ button{
     margin-top: 20px;
     left: 70px;
 }
+#input-number{
+    background: none;
+    border: none;
+}
 .box-count{
     background: #fff;
     font-weight: bold;
@@ -77,12 +81,15 @@ button{
     display: inline-block;
     bottom: 15px;
     right: 20px;
+    border: none;
+    outline: none;
+    width: 100px;
 }
-.green{
-    color: rgb(15, 75, 15);
+.blue{
+    color: blue;
 }
-.orangered{
-    color: orangered;
+.purple{
+    color: purple;
 }
 .red{
     color: red;

@@ -12,18 +12,36 @@ button.addEventListener('click', function() {
 });
 
 messageInput.addEventListener('keydown', function() {
-  var messageInputParent = document.getElementById('textarea').parentNode;
-  var countDown = '140';
+  var countDown = 140;
   var number = countDown - messageInput.value.length;
-  var boxCount = document.createElement('div');
-  var contentCount = document.createTextNode(number);
-  boxCount.appendChild(contentCount);
-  messageInputParent.appendChild(boxCount);
-  boxCount.classList.add('box-count');
-/*
+  var boxCount = document.getElementById('input-number').parentNode;
+  var otherInput = document.createElement('input');
+ 
+  var content = document.createTextNode(number);
+  
+  otherInput.appendChild(content);
+  boxCount.appendChild(otherInput);
+  otherInput.setAttribute('value', number);
+  otherInput.classList.add('box-count');
+  /*
     Si pasa los 140 caracteres, deshabilitar el botón.
     Si pasa los 120 caracteres, mostrar el contador con OTRO color.
     Si pasa los 130 caracteres, mostrar el contador con OTRO color.
     Si pasa los 140 caracteres, mostrar el contador en negativo.*/
+  /*
+    if(number<=0){
+        otherInput.classList.add('red');
+        //button.setAttribute('disabled',button);
+    }*/
+  if (number <= 20) {
+    otherInput.classList.add('blue');
+  }
+  if (number <= 10) {
+    otherInput.classList.add('purple');
+  }
+  if (number <= 0) {
+    otherInput.classList.add('red');
+    button.setAttribute('disabled',button);
+  }
 });
 
